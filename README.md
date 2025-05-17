@@ -1,7 +1,7 @@
 # 💡 CodeMentor – Next.js + Genkit + Gemini API
 
 **CodeMentor** é um projeto desenvolvido por **Giulia Vieira** durante a **Imersão IA da Alura em parceria com o Google**.  
-Ele explora o uso da **API Gemini (Google AI)** em conjunto com o **Firebase Studio**, criando um assistente de programação que age como um mentor técnico, ajudando usuários a entender e depurar seu código com o apoio de IA generativa.
+Ele explora o uso da **API Gemini (Google AI)** em conjunto com o **Firebase Studio**, criando um assistente de programação que age como um mentor técnico, ajudando usuários e principalmente estudantes a entender e depurar seu código com o apoio de IA generativa, sem obter o código corrigido e sim um direcionamento para resolver um determinado problema, além de ajudar a debugar o código, também ajuda com certas questões pessoais sobre a carreira como: qual stack seguir, como construir um bom portfolio, questões que geralmente iniciantes tem e um mentor ajudaria a responder. Essa é uma ferramenta principalmente para iniciantes e estudantes.
 
 ---
 
