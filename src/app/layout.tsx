@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'CodeMentor',
   description: 'CodeMentor é seu mentor de programação pessoal — um assistente inteligente projetado para ajudá-lo a identificar e entender erros em seu código e orientá-lo com dicas e insights práticos.',
+  icons: {
+    icon: '/favicon.ico', 
+  },
 };
 
 export default function RootLayout({

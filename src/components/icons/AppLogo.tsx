@@ -1,16 +1,16 @@
-import type { SVGProps } from 'react';
+import Image from 'next/image';
 
-export function AppLogo(props: SVGProps<SVGSVGElement>) {
+export function AppLogo(props: Omit<React.ComponentProps<typeof Image>, 'src' | 'alt' | 'width' | 'height'>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor" // Use fill for a solid shape
-      stroke="currentColor"
-      strokeWidth="0" // No stroke needed for a solid filled square
+    <Image
+      src="/favicon.png"
+      alt="CodeMentor Logo"
+      width={32}
+      height={32}
+      style={{
+        filter: 'invert(20%) sepia(39%) saturate(7450%) hue-rotate(330deg) brightness(92%) contrast(101%)'
+      }}      
       {...props}
-    >
-      <path d="M0 0h24v24H0z" /> {/* A simple path for a filled square */}
-    </svg>
+    />
   );
 }
