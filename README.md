@@ -50,9 +50,16 @@ npm install
 npm run dev
 ```
 
-5. **Acesse em seu navegador:**
+5. **Em outro terminal, inicie o servidor do Genkit:**
+
+```bash
+npm run genkit:dev
+```
+
+6. **Acesse em seu navegador:**
 
 - App: [http://localhost:9002](http://localhost:9002)  
+- Genkit: [http://localhost:3400](http://localhost:3400) (ou a porta padrão configurada)
 
 ---
 
