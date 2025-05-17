@@ -21,7 +21,7 @@ const GetMentorAdviceOutputSchema = z.object({
   explanation: z.string().optional().describe('A clear explanation of the core issue, concept, or error. Used when responseType is "code_analysis". Tailored to the identified programming language and assessed experience level.'),
   guidance: z.string().optional().describe('Hints, leading questions, or areas to investigate to help the user discover the solution or understand the concept themselves. Used when responseType is "code_analysis". Avoid direct answers or overly explicit step-by-step instructions. The goal is to guide their thinking process. Tailored to the identified programming language and assessed experience level.'),
   tip: z.string().optional().describe('An additional tip or best practice. If the assessed level is beginner, this tip should suggest foundational concepts or topics to review. For intermediate/advanced levels, it can be a more specific best practice or resource. Used when responseType is "code_analysis". Tailored to the programming language and assessed experience level.'),
-  mentorshipResponse: z.string().optional().describe("A well-formatted (using Markdown for structure like headings '## like this', lists '- like this', '**bold**', '`inline_code`') response for general mentorship or career questions. This is used when responseType is 'general_mentorship'. Should be engaging and directly address the user's general query.")
+  mentorshipResponse: z.string().optional().describe("A well-formatted (using Markdown for structure like '## Heading' for subheadings to highlight key topics, lists '- like this', '**bold**', '`inline_code`') response for general mentorship or career questions. This is used when responseType is 'general_mentorship'. Should be engaging and directly address the user's general query.")
 });
 export type GetMentorAdviceOutput = z.infer<typeof GetMentorAdviceOutputSchema>;
 
@@ -64,7 +64,7 @@ Also, identify:
 **If the input is a GENERAL MENTORSHIP/CAREER question:**
     *   Set responseType to "general_mentorship".
     *   Craft a thoughtful and engaging response directly addressing the user's query in the mentorshipResponse field.
-    *   This response should be formatted using Markdown for structure (e.g., use '## Heading' for subheadings, '- item' or '* item' for bullet points, '**bolded text**' for emphasis, '\`inline_code\`' for code terms).
+    *   This response should be formatted using Markdown for structure (e.g., use '## Heading' for subheadings to highlight key topics, '- item' or '* item' for bullet points, '**bolded text**' for emphasis, '\`inline_code\`' for code terms).
     *   The tone should be encouraging and mentor-like.
     *   Leave explanation, guidance, and tip fields empty or undefined.
 
@@ -86,3 +86,5 @@ const developerMentorFlow = ai.defineFlow(
     return output!;
   }
 );
+
+    
