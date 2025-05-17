@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import favicon from '@/app/favicon.png'; // Ajuste conforme seu alias de importação
 
 export function AppLogo(props: Omit<React.ComponentProps<typeof Image>, 'src' | 'alt' | 'width' | 'height'>) {
   return (
     <Image
-      src="/favicon.png"
+      src={favicon}
       alt="CodeMentor Logo"
       width={32}
       height={32}
